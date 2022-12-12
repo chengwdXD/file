@@ -100,7 +100,7 @@ echo "</li>";
                 echo "<img src='./upload/{$file['file_name']}'>";
                 
             }else{
-                $icon=dummy_icon($file['type']);
+                $icon=dummy_icon($file['type']);//dummy_icon假的
                 echo "<img src='./material/{$icon}' style='width:80px'>";
 
             }
@@ -113,7 +113,7 @@ echo "</li>";
             echo $file['file_name'];
             echo "</div>";
             echo "<div>";
-            echo floor($file['size']/1024)."mb";
+            echo floor($file['size']/1024)."kb";
             echo "</div>";
             echo "<div>";
             echo $file['type'];
